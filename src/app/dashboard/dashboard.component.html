@@ -1,0 +1,25 @@
+<h1 align="center">
+    My Posts
+</h1>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4" id="boxshadow" *ngFor="let arr of postArray">
+            <!-- <img class="card-img-top" src='https:/ /www.w3schools.com/howto/img_avatar.png' alt="Card image cap"> -->
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="far fa-edit"></i> {{arr.title |uppercase}}</h5>
+                <div class="card-body txt">
+                    <p class="card-text">{{arr.body}}</p>
+                </div>
+            </div>
+            <div class="chip">
+                <img src={{arr.image}} alt="Person" width="96" height="96"> {{arr.name}}
+            </div>
+            <!-- <a href="#" class="btn btn-danger" style="float:right;">Read More</a> -->
+            <a href="#" class="btn" style="float:right;">
+                <h6>Read More</h6>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,98 @@
+.chip {
+    display: inline-block;
+    padding: 0 5%;
+    height: 15%;
+    font-size: 13px;
+    line-height: 20px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    position: absolute;
+    bottom: 5%;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 100%;
+    width: 30%;
+    border-radius: 50%;
+}
+
+.card-img-top {
+    height: 35vh;
+}
+
+.col-sm-4 {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+h1 {
+    color: #424242;
+    text-shadow: 1px 1px 2px white, 0 0 25px rgb(173, 173, 173), 0 0 5px rgb(0, 0, 0);
+}
+
+h5 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+h6 {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(243, 1, 1), 0 0 25px rgb(255, 92, 71), 0 0 5px rgb(139, 44, 0);
+}
+
+#boxshadow {
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: white;
+}
+
+#boxshadow::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    /* hide shadow behind image */
+    width: 70%;
+    left: 15%;
+    /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+}
+
+.btn {
+    position: absolute;
+    ;
+    right: 3%;
+    bottom: 5%;
+}
+
+.txt {
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    overflow-y: hidden;
+}
+
+.txt::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    /* hide shadow behind image */
+    width: 70%;
+    left: 15%;
+    /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+}
+
+h5 {
+    white-space: nowrap;
+}

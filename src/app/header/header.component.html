@@ -1,0 +1,22 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #424242">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav " *ngIf="isLogedIn">
+            <img src={{image}} class="rounded mx-auto d-block" alt="Cinque Terre" width="50" height="50">&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="nav-item nav-link active mx-auto" routerLink="/AllPosts"><i class="fas fa-globe-asia"></i>&nbsp;Public Post <span class="sr-only">(current)</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="nav-item nav-link active mx-auto" routerLink="/dashboard"><i class="far fa-user"></i>&nbsp;Dashboard</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="nav-item nav-link active mx-auto" routerLink="/addPost"><i class="fas fa-plus-circle"></i>&nbsp;Add Post</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="nav-item nav-link active mx-auto" href="#" (click)="logOut()"> <i class="fas fa-sign-out-alt"></i>&nbsp;LogOut</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="navbar-nav " *ngIf="!isLogedIn">
+            <button type="button" class="btn btn-danger" (click)="googleSignIn() "><i class="fab fa-google-plus-g"></i>&nbsp;Login&nbsp;&nbsp;</button>
+        </div>
+    </div>
+    <a class="navbar-brand mx-auto" href="#">
+        <h2>LOCATEiT!<i class="fas fa-search-location"></i></h2>
+    </a>
+
+</nav>
